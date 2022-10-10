@@ -16,4 +16,13 @@ The following techniques have been used:
 
 ## To excute the script
 python < scriptname.py :# ml_training
-To run the code conda activate environment
+
+# executing the code
+ - check the conda environments using conda info --envs
+ - check the list of the environments you have conda env list
+ - if the environmenr is not existed create the environment
+ - if the environment is existed activate using conda activate environment_name
+ - create the python file 
+ - execute the python file using python3 pythonfilename.py
+ - install the required package names using pip3 install package_name
+
