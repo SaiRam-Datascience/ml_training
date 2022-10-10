@@ -16,3 +16,4 @@ The following techniques have been used:
 
 ## To excute the script
 python < scriptname.py :# ml_training
+To run the code conda activate environment
