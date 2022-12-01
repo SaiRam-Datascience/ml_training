@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": "/root/miniconda3/envs/mle-dev/bin",
+    "python.formatting.blackArgs": [
+        "--line-length=89"
+    ],
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=89",
+    ],
+}
