@@ -20,14 +20,20 @@ Step 1 - Environment setup
 
 - You can create the environment required for this setup by running the below command by navigating into the current directory in the shell.
 root
+
 conda env create -f env.yml
+
 - Then activate it by running the below command
  
 root
+
 conda activate mle-dev
+
 Step 2 - Run the file
 
 - You can type the below command in the shell.
+ 
 python
+
 python nonstandardcode.py
 
