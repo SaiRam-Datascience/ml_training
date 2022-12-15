@@ -69,12 +69,8 @@ compare_props = pd.DataFrame(
         "Random": income_cat_proportions(test_set),
     }
 ).sort_index()
-compare_props["Rand. %error"] = (
-    100 * compare_props["Random"] / compare_props["Overall"] - 100
-)
-compare_props["Strat. %error"] = (
-    100 * compare_props["Stratified"] / compare_props["Overall"] - 100
-)
+compare_props["Rand. %error"] = 100 * compare_props["Random"] / compare_props["Overall"] - 100
+compare_props["Strat. %error"] = 100 * compare_props["Stratified"] / compare_props["Overall"] - 100
 
 for set_ in (strat_train_set, strat_test_set):
     set_.drop("income_cat", axis=1, inplace=True)
@@ -89,9 +85,7 @@ housing["rooms_per_household"] = housing["total_rooms"] / housing["households"]
 housing["bedrooms_per_room"] = housing["total_bedrooms"] / housing["total_rooms"]
 housing["population_per_household"] = housing["population"] / housing["households"]
 
-housing = strat_train_set.drop(
-    "median_house_value", axis=1
-)  # drop labels for training set
+housing = strat_train_set.drop("median_house_value", axis=1)  # drop labels for training set
 housing_labels = strat_train_set["median_house_value"].copy()
 
 
@@ -104,12 +98,8 @@ X = imputer.transform(housing_num)
 
 housing_tr = pd.DataFrame(X, columns=housing_num.columns, index=housing.index)
 housing_tr["rooms_per_household"] = housing_tr["total_rooms"] / housing_tr["households"]
-housing_tr["bedrooms_per_room"] = (
-    housing_tr["total_bedrooms"] / housing_tr["total_rooms"]
-)
-housing_tr["population_per_household"] = (
-    housing_tr["population"] / housing_tr["households"]
-)
+housing_tr["bedrooms_per_room"] = housing_tr["total_bedrooms"] / housing_tr["total_rooms"]
+housing_tr["population_per_household"] = housing_tr["population"] / housing_tr["households"]
 
 housing_cat = housing[["ocean_proximity"]]
 housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
@@ -191,9 +181,7 @@ y_test = strat_test_set["median_house_value"].copy()
 
 X_test_num = X_test.drop("ocean_proximity", axis=1)
 X_test_prepared = imputer.transform(X_test_num)
-X_test_prepared = pd.DataFrame(
-    X_test_prepared, columns=X_test_num.columns, index=X_test.index
-)
+X_test_prepared = pd.DataFrame(X_test_prepared, columns=X_test_num.columns, index=X_test.index)
 X_test_prepared["rooms_per_household"] = (
     X_test_prepared["total_rooms"] / X_test_prepared["households"]
 )
