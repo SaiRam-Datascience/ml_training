@@ -1,0 +1,20 @@
+'2023-05-15 18:16:53,050 root         INFO     Fetching the Housing Data from External URL..
+'2023-05-15 18:16:54,300 root         INFO     Splitting the data into Train and Test
+'2023-05-15 18:16:54,315 root         INFO     Performing Imputation
+'2023-05-15 18:16:54,344 root         INFO     Performing the feature Transformation
+'2023-05-15 18:16:54,383 root         INFO     Saving the Processed Train and Test Data...
+'2023-05-15 19:24:35,378 root         INFO     Fetching the Housing Data from External URL..
+'2023-05-15 19:24:36,886 root         INFO     Splitting the data into Train and Test
+'2023-05-15 19:24:36,903 root         INFO     Performing Imputation
+'2023-05-15 19:24:36,924 root         INFO     Performing the feature Transformation
+'2023-05-15 19:24:36,940 root         INFO     Saving the Processed Train and Test Data...
+'2023-05-15 19:35:35,096 root         INFO     Fetching the Housing Data from External URL..
+'2023-05-15 19:35:36,153 root         INFO     Splitting the data into Train and Test
+'2023-05-15 19:35:36,169 root         INFO     Performing Imputation
+'2023-05-15 19:35:36,191 root         INFO     Performing the feature Transformation
+'2023-05-15 19:35:36,208 root         INFO     Saving the Processed Train and Test Data...
+'2023-05-16 10:30:41,271 root         INFO     Fetching the Housing Data from External URL..
+'2023-05-16 10:30:42,496 root         INFO     Splitting the data into Train and Test
+'2023-05-16 10:30:42,536 root         INFO     Performing Imputation
+'2023-05-16 10:30:42,592 root         INFO     Performing the feature Transformation
+'2023-05-16 10:30:42,634 root         INFO     Saving the Processed Train and Test Data...

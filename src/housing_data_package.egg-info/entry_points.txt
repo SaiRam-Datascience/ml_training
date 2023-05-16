@@ -1,0 +1,4 @@
+[console_scripts]
+ingest_data = housing_data_package.ingest:main
+score_model = housing_data_package.score:main
+train_model = housing_data_package.train:main
