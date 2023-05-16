@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "housing_data_package"
+authors = [
+    {name = "SaiRam", email = "sairam.kancharla@tigeranalytics.com"},
+]
+description = "This Package is to predict the median house price of a locality given the input features"
+requires-python = ">=3.7"
+keywords = ["housing data prediction", "regression", "machine learning"]
+
+classifiers = ["Programming Language :: Python :: 3",]
+
+dynamic = ["version", "readme"]
+
+[project.urls]
+"Homepage" = "https://github.com/SaiRam-Datascience/ml_training"
+"Bug Tracker" = "https://github.com/SaiRam-Datascience/ml_training/issues"
+
+[project.scripts]
+ingest_data = "housing_data_package.ingest:main"
+train_model = "housing_data_package.train:main"
+score_model = "housing_data_package.score:main"
+
+
+[tool.setuptools.dynamic]
+version = {file = "src/housing_data_package/VERSION"}
+readme = {file = ["README.md"]}
+
